@@ -59,7 +59,6 @@ export default class Game extends Component {
             status = 'Next Player is ' + (this.state.xIsNext ? 'X' : 'O');
         }
 
-
         return (
             <div className="game">
                 <div className="game-board">
@@ -94,6 +93,6 @@ function calculateWinner(squares) {
             return squares[a];
         }
     }
-
+    
     return null;
 }
